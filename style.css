@@ -1,17 +1,143 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("'https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;600&display=swap'");
 @import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
 
 :root {
-  --main-font: "Poppins", sans-serif;
+  --main-font: "Lexend", sans-serif;
+  --main-color: #f5f5f5;
+  --secondary-color: #64dafe;
+  --tertiary-color: #f97d3f;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--main-font);
 }
 
-img {
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+body {
+  background: #000000;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.banner {
+  color: var(--main-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.banner .bio-info {
+  letter-spacing: 2px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.banner .bio {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  text-align: left;
+}
+
+.banner .bio h1 {
+  font-size: 45px;
+}
+
+.banner .bio h2 {
+  font-size: 35px;
+  font-weight: lighter;
+}
+
+.banner .bio h3 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.banner .bio h5 {
+  font-size: 15px;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
+.banner .link-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 15px;
+  line-height: 3;
+}
+
+.banner .link-list .link {
+  border-bottom: solid;
+  border-color: var(--main-color);
+  font-size: 12px;
+  cursor: pointer;
+  width: 90px;
+}
+
+.banner .link-list .link:hover {
+  color: var(--tertiary-color);
+  border-color: var(--tertiary-color);
+}
+
+.banner .social-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  line-height: 3;
+}
+
+.banner .social-list i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.banner .social-list i:hover {
+  color: var(--secondary-color);
+}
+
+.banner .child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner img {
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+.biography {
+  margin-top: 100px;
+  color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+}
+
+.biography h1 {
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.biography h2 {
+  font-weight: lighter;
+  font-size: 25px;
+}
+
+.biography .skill-list {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.biography .skill-list i {
+  font-size: 50px;
+  cursor: pointer;
 }
